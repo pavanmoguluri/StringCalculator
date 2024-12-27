@@ -6,7 +6,7 @@ import java.util.StringJoiner;
 
 public class StringCalculator {
 	
-	public static int Add(String numbers) {
+	public int Add(String numbers) {
         int sum = 0;
         List<Integer> pVeList = new ArrayList<Integer>();
         List<Integer> nVeList = new ArrayList<Integer>();
