@@ -7,6 +7,16 @@ import java.util.stream.Collectors;
 
 public class StringCalculator {
 
+	private int count;
+	
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
 	// method to extract numbers in the string(+ve & -ve)
 	private List<Integer> extractNumbers(String str) {
 		str += " ";
@@ -29,7 +39,7 @@ public class StringCalculator {
 	}
 
 	public int Add(String numbers) {
-
+		++count;
 		if (null == numbers || numbers.isBlank())
 			return 0;
 		int sum = 0;

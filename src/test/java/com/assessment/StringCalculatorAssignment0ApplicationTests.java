@@ -71,5 +71,14 @@ class StringCalculatorAssignment0ApplicationTests {
 		String inpStr = "//[**][%%]\\n1**2%%3";
 		assertEquals(6,stringCalculator.Add(inpStr));
 	}
+	
+	@Test
+	public void getInvokeCount() {
+//		assertEquals(stringCalculator.getCount(), 0);
+		stringCalculator.Add("1,2,3");
+		stringCalculator.Add("//[***]\\\\n1***2***3");
+		stringCalculator.Add("//[*][%]\\n1*2%3");
+		assertEquals(stringCalculator.getCount(), 3);
+	}
 
 }
